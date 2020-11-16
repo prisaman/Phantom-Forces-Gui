@@ -9,20 +9,16 @@ local PhantomForcesgui = Instance.new("TextLabel")
 local esp = Instance.new("TextButton")
 local close = Instance.new("TextButton")
 local owlhub = Instance.new("TextButton")
-local killgui = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
-local OPEN = Instance.new("Frame")
-local OPEN2 = Instance.new("TextButton")
+
 
 
 ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.Position = UDim2.new(0.216262996, 0, 0.399665564, 0)
 Frame.Size = UDim2.new(0, 408, 0, 261)
-Frame.Visible = false
 Frame.Active = true
 Frame.draggable = true
 
@@ -196,19 +192,6 @@ owlhub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
 end)
 
-killgui.Name = "kill gui"
-killgui.Parent = Frame
-killgui.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
-killgui.Position = UDim2.new(0.0171568636, 0, 0.555555582, 0)
-killgui.Size = UDim2.new(0, 178, 0, 50)
-killgui.Font = Enum.Font.SourceSans
-killgui.Text = "kill gui"
-killgui.TextColor3 = Color3.fromRGB(0, 0, 0)
-killgui.TextSize = 14.000
-killgui.MouseButton1Down:connect(function()
-	OPEN.visible = false
-	Frame.Visible = false
-end)
 
 InfiniteYield.Name = "InfiniteYield"
 InfiniteYield.Parent = Frame
@@ -221,26 +204,4 @@ InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
 InfiniteYield.TextSize = 14.000
 InfiniteYield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/prisaman/InfiniteYield/main/InfiniteYield.lua'))()
-end)
-
-OPEN.Name = "OPEN"
-OPEN.Parent = ScreenGui
-OPEN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OPEN.Position = UDim2.new(0.00554667413, 0, 0.502978504, 0)
-OPEN.Size = UDim2.new(0, 110, 0, 26)
-OPEN.Active = true
-OPEN.draggable = true
-
-OPEN2.Name = "OPEN2"
-OPEN2.Parent = OPEN
-OPEN2.BackgroundColor3 = Color3.fromRGB(85, 255, 255)
-OPEN2.Position = UDim2.new(0, 0, -0.0384615399, 0)
-OPEN2.Size = UDim2.new(0, 110, 0, 26)
-OPEN2.Font = Enum.Font.SciFi
-OPEN2.Text = "OPEN"
-OPEN2.TextColor3 = Color3.fromRGB(0, 0, 0)
-OPEN2.TextSize = 14.000
-OPEN2.MouseButton1Down:connect(function()
-	OPEN.Visible = false
-	Frame.Visible = true
 end)
