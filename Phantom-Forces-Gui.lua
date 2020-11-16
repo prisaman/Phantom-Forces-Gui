@@ -11,8 +11,6 @@ local close = Instance.new("TextButton")
 local owlhub = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
 
-
-
 ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
@@ -175,7 +173,6 @@ close.TextSize = 14.000
 close.TextStrokeColor3 = Color3.fromRGB(170, 0, 0)
 close.TextWrapped = true
 close.MouseButton1Down:connect(function()
-	OPEN.Visible = true
 	Frame.Visible = false
 end)
 
